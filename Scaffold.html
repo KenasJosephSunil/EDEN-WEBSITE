@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eden International by EDEN GROUP</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/EDEN GROUP LOGO .png" rel="icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/Logo/eden white logo.png" alt="eden logo">
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar sticky-top">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#get-started">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Scaffolding</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Scaffolding</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <style>
+      /* Global Styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      body {
+        background-color: #f5f5f5;
+      }
+
+      /* Home Page Styles */
+      .hero-section {
+
+        background-position: center;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        padding: 0 2rem;
+      }
+
+      .hero-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .hero-description {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .cta-button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #388e3c;
+      }
+
+      /* Services Page Styles */
+      .services-section {
+        padding: 4rem 2rem;
+      }
+
+      .services-section-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* Use auto-fit to make grid responsive */
+        grid-gap: 2rem;
+        justify-content: center;
+        /* Center align grid items */
+      }
+
+      .service-card {
+        background-color: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+        background-color: rgb(43, 165, 43);
+        color: #090909d4;
+      }
+
+      .service-card:hover .service-icon {
+        color: black;
+      }
+
+      .service-card:hover .service-description {
+        color: black;
+      }
+
+      .service-icon {
+        font-size: 3rem;
+        color: #4caf50;
+        margin-bottom: 1rem;
+      }
+
+      .service-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .service-description {
+        font-size: 1rem;
+        color: #666;
+      }
+
+
+      /* About Page Styles */
+      .about-section {
+        display: flex;
+        flex-wrap: wrap;
+        /* Allow items to wrap to the next line on smaller screens */
+        align-items: center;
+        background-color: #fff;
+        padding: 4rem 2rem;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        /* Horizontally center the content */
+        align-items: center;
+        /* Vertically center the content */
+        height: fit-content;
+        /* Set a fixed height for the container, adjust as needed */
+        /* Add any other styles for your container */
+      }
+
+      .scaffold-about-img {
+        position: absolute;
+        top: 80%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        /* Center the image using absolute positioning and translate */
+        max-width: 35%;
+        /* Set maximum width to 50% of its container */
+        height: 35%;
+        /* Maintain aspect ratio */
+        border-radius: 65px;
+      }
+
+      /* Media query for mobile devices */
+      @media (max-width: 767px) {
+        .about-section {
+          height: auto;
+          /* Adjust height to fit content */
+        }
+
+        .scaffold-about-img {
+          max-width: 80%;
+          /* Adjust maximum width for better fit on mobile screens */
+          position: static;
+          /* Reset position for mobile screens */
+          transform: none;
+          /* Reset transform for mobile screens */
+        }
+      }
+
+
+      .about-image {
+        flex: 0 0 100%;
+        /* Take full width on smaller screens */
+        max-width: 100%;
+        margin-bottom: 2rem;
+        /* Add space between image and content */
+      }
+
+      .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-content {
+        flex: 0 0 100%;
+        /* Take full width on smaller screens */
+        max-width: 100%;
+        padding-left: 0;
+        /* Remove left padding */
+      }
+
+      .about-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+
+      .about-description {
+        font-size: 1.1rem;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      .about-features {
+        list-style-type: none;
+        padding: 0;
+      }
+
+
+
+      .about-features li {
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      .about-features li:before {
+        content: "\2024";
+        color: #4caf50;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-right: 0.5em;
+      }
+
+      .carousel-item img {
+        max-width: 50%;
+        /* Set maximum width to prevent image overflow */
+        max-height: 500px;
+        /* Set maximum height to make the images smaller */
+        width: auto;
+        /* Ensure images maintain aspect ratio */
+        margin: auto;
+        /* Center the images horizontally */
+      }
+    </style>
+    </head>
+
+    <body>
+
+      <!-- Services Page -->
+      <section data-aos="fade-up" class="services-section">
+        <div class="section-header">
+          <h2>About our Scaffold Division</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="service-icon fas fa-building"></i>
+            <h3 class="service-title">Scaffolding Manufacturing</h3>
+            <p class="service-description">We provide reliable and safe scaffolding solutions for commercial
+              projects.</p>
+          </div>
+          <div class="service-card">
+            <i class="service-icon fas fa-home"></i>
+            <h3 class="service-title">Scaffolding Sales</h3>
+            <p class="service-description">Our scaffolding experts can assist with all your residential construction
+              needs.</p>
+          </div>
+          <div class="service-card">
+            <i class="service-icon fas fa-hard-hat"></i>
+            <h3 class="service-title">Scaffolding Rentals</h3>
+            <p class="service-description">We specialize in providing top-quality scaffolding for industrial
+              applications.</p>
+          </div>
+          <div class="service-card">
+            <i class="service-icon fas fa-wrench"></i>
+            <h3 class="service-title">Scaffolding Installation</h3>
+            <p class="service-description">Trust us to set up safe and efficient scaffolding for your maintenance
+              projects.</p>
+          </div>
+          <div class="service-card">
+            <i class="service-icon fas fa-tools"></i>
+            <h3 class="service-title">Scaffolding Designing and Engineering</h3>
+            <p class="service-description">Our scaffolding solutions support your renovation and remodeling needs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Page -->
+      <section class="about-section" data-aos="fade-up" style="background-color:rgba(216, 213, 213, 0.86);">
+        <div class="about-image">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" data-aos="fade" data-aos-delay="100">
+              <div class="carousel-item active">
+                <img src="./assets/img/Scaffolding/Scaffold-1.jpg" class="d-block w-100" alt="Scaffold-1">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/Scaffolding/Scaffold-2.jpg" class="d-block w-100" alt="Scaffold-2">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/Scaffolding/Scaffold-3.jpg" class="d-block w-100" alt="Scaffold-3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+          <div class="section-header">
+            <h2>About our Scaffold Services</h2>
+            <p>At Scaffolding Service, we are a team of experienced professionals dedicated to
+              providing top-notch scaffolding solutions for a wide range of projects. With decades of industry
+              expertise,
+              we pride ourselves on delivering safe, reliable, and efficient scaffolding services to our clients.</p>
+          </div>
+
+          <ul class="about-features" data-aos="fade-up" data-aos-delay="200">
+            <li>Innovative scaffolding design and engineering</li>
+            <li>Fully trained and certified installation teams</li>
+            <li>Comprehensive safety standards and protocols</li>
+            <li>Competitive pricing and flexible project timelines</li>
+            <li>Exceptional customer service and support</li>
+            <li>EDEN Supplies HD Galvanized Scaffolding Tubes as per EN Standard with along<br> year of manufacturing
+              and nominal wall thickness to be embossed at an interval of 1.50 meter length.</li>
+            <li>The embossed characters are minimum height 4 mm, depth & 2 mm deep (As per Aramco Standard)</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us section-bg" data-aos="fade-up" data-aos-delay="10">
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-4">
+              <div class="why-box">
+                <h3>What is Scaffolding or Staging?</h3>
+                <p>
+                  Scaffolding or staging, is a
+                  Temporary Structure used to
+                  Support a work crew
+                  and Materials to aid in the
+                  Construction, Maintenance
+                  and repair of Buildings,
+                  Bridges and all other
+                  man made Structures. There are three basic types of scaffolding available in the
+                  construction industry.
+                </p>
+              </div>
+            </div><!-- End Why Box -->
+
+            <div class="col-lg-8 d-flex align-items-center">
+              <div class="row gy-4">
+
+                <div class="col-xl-4">
+                  <div class="icons-box d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/img/Scaffolding/Base Supported Scaffolding.jpg" class="bi bi-clipboard-data"
+                      style="height: auto; width: 200px; border-radius: 100%;">
+                    <h4>Base Supported Scaffolding</h4>
+                    <p>Most common is welded frame scaffold. For
+                      industrial type work, system scaffold along with tube and clamp
+                      are more prevalent.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+                <div class="col-xl-4">
+                  <div class="icons-box d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/img/Scaffolding/tube and fitting scaffolding.jpg"
+                      style="height: auto; width: 200px; border-radius: 100%;" class="bi bi-gem">
+                    <h4>Tube <br> Scaffolding</h4>
+                    <p>Tubes are highly versatile
+                      scaffolding, but it requires a greater expertise to erect. It mimics
+                      what was done in the old days with lumber.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+                <div class="col-xl-4">
+                  <div class="icons-box d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/img/Scaffolding/Scaffold-4.jpg"
+                      style="height: auto; width: 200px; border-radius: 100%;" class="bi bi-inboxes">
+                    <h4>Fitting <br> Scaffolding</h4>
+                    <p>Fittings are highly versatile
+                      scaffolding, but it requires a greater expertise to erect. It mimics
+                      what was done in the old days with lumber.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End Why Us Section -->
+
+      <!-- ======= Accessories Section ======= -->
+      <section id="menu" class="menu">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <h2>Scaffolding Accessories</h2>
+            <p style="color: #4caf50;">Check out our inventory</p>
+          </div>
+
+          <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-spigot">
+                <h4>Spigot Connectors</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-intermediate">
+                <h4>Intermediate Transoms</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-cuplockinside">
+                <h4>Cuplock Inside Board Transom</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-cuplockbracing">
+                <h4>Cuplock Bracing</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-basejack">
+                <h4>Adjustable Base Jack</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-baseplate">
+                <h4>Socket Base Plate</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-spigotbase">
+                <h4>Spigot Base</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-swivelplate">
+                <h4>Swivel/Rocking Base Plate</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-universaljack">
+                <h4>Universal Jack</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-adjfork">
+                <h4>Adjustable Fork Head</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-fixfork">
+                <h4>Fixed Fork Head</h4>
+              </a><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-beambracket">
+                <h4>Beam Bracket(Cup Lock)</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-cantilever">
+                <h4>Cantilever Frame</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+          </ul>
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="tab-pane fade active show" id="menu-spigot">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Spigot Connectors</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/spigot-connector-1.avif" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/spigot-connector-1.avif" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Spigot Connector
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/spigot-connector-2.avif" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/spigot-connector-2.avif" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Spigot Connector
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/spigot-connector-3.avif" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/spigot-connector-3.avif" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Spigot Connector
+                  </p>
+                </div><!-- Menu Item -->
+              </div>
+
+            </div><!-- End Starter Menu Content -->
+
+            <div class="tab-pane fade" id="menu-intermediate">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Intermediate Transoms</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/intermediate-transom-1.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/intermediate-transom-1.jpg"
+                      class="menu-img img-fluid" alt=""></a>
+                  <p class="ingredients">
+                    Intermediate Transom
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/intermediate-transom-2.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/intermediate-transom-2.jpg"
+                      class="menu-img img-fluid" alt=""></a>
+                  <p class="ingredients">
+                    Intermediate Transom
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/intermediate-transom-3.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/intermediate-transom-3.jpg"
+                      class="menu-img img-fluid" alt=""></a>
+                  <p class="ingredients">
+                    Intermediate Transom
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Breakfast Menu Content -->
+
+            <div class="tab-pane fade" id="menu-cuplockinside">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Cuplock Inside Board Transom</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cuplock-transom-1.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cuplock-transom-1.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cuplock Inside Board Transom
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cuplock-transom-2.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cuplock-transom-2.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cuplock Inside Board Transom
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cuplock-transom-3.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cuplock-transom-3.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cuplock Inside Board Transom
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Lunch Menu Content -->
+
+            <div class="tab-pane fade" id="menu-cuplockbracing">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Cuplock Bracing</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cuplock-bracing-1.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cuplock-bracing-1.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cuplock Bracing
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cuplock-bracing-3.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cuplock-bracing-3.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cuplock Bracing
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cuplock-bracing-2.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cuplock-bracing-2.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cuplock Bracing
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Dinner Menu Content -->
+
+            <div class="tab-pane fade" id="menu-basejack">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Adjustable Base Jack</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/adjustable-base-jack-1.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/adjustable-base-jack-1.jpg"
+                      class="menu-img img-fluid" alt=""></a>
+                  Adjustable Base Jack
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/adjustable-base-jack-2.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/adjustable-base-jack-2.jpg"
+                      class="menu-img img-fluid" alt=""></a>
+                  Adjustable Base Jack
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/adjustable-base-jack-3.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/adjustable-base-jack-3.jpg"
+                      class="menu-img img-fluid" alt=""></a>
+                  Adjustable Base Jack
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Lunch Menu Content -->
+
+            <div class="tab-pane fade" id="menu-baseplate">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Socket Base Plate</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/socket-base-plate-3.webp" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/socket-base-plate-3.webp"
+                      class="menu-img img-fluid" alt=""></a>
+                  <p class="ingredients">
+                    Socket Base Plate
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/socket-base-plate-1.webp" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/socket-base-plate-1.webp"
+                      class="menu-img img-fluid" alt=""></a>
+                  <p class="ingredients">
+                    Socket Base Plate
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/socket-base-plate-2.webp" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/socket-base-plate-2.webp"
+                      class="menu-img img-fluid" alt=""></a>
+                  <p class="ingredients">
+                    Socket Base Plate
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Lunch Menu Content -->
+
+            <div class="tab-pane fade" id="menu-spigotbase">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Spigot Base</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/spigot-base-1.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/spigot-base-1.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Spigot Base
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/spigot-base-2.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/spigot-base-2.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Spigot Base
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Lunch Menu Content -->
+
+            <div class="tab-pane fade" id="menu-swivelplate">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Swivel/Rocking Base Plate</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/swirel-base-plate-3jpg.jpeg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/swirel-base-plate-3jpg.jpeg"
+                      class="menu-img img-fluid" alt=""></a>
+                  <p class="ingredients">
+                    Swivel/Rocking Base Plate
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/swirel-base-plate-1.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/swirel-base-plate-1.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Swivel/Rocking Base Plate
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/swirel-base-plate-2.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/swirel-base-plate-2.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Swivel/Rocking Base Plate
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Lunch Menu Content -->
+
+            <div class="tab-pane fade" id="menu-universaljack">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Universal Jack</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/univewrsal-jack-1.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/univewrsal-jack-1.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Universal Jack
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/univewrsal-jack-2.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/univewrsal-jack-2.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Universal Jack
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Lunch Menu Content -->
+
+            <div class="tab-pane fade" id="menu-adjfork">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Adjustable Fork Head</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/adjustable-fork-head-1.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/adjustable-fork-head-1.jpg"
+                      class="menu-img img-fluid" alt=""></a>
+                  <p class="ingredients">
+                    Adjustable Fork Head
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/adjustable-fork-head-3.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/adjustable-fork-head-3.jpg"
+                      class="menu-img img-fluid" alt=""></a>
+                  <p class="ingredients">
+                    Adjustable Fork Head
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/adjustable-fork-head-2.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/adjustable-fork-head-2.jpg"
+                      class="menu-img img-fluid" alt=""></a>
+                  <p class="ingredients">
+                    Adjustable Fork Head
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Lunch Menu Content -->
+
+            <div class="tab-pane fade" id="menu-fixfork">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Fixed Fork Head</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/fixed-fork-head-1.webp" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/fixed-fork-head-1.webp" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Fixed Fork Head
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/fixed-fork-head-2.webp" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/fixed-fork-head-2.webp" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Fixed Fork Head
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Lunch Menu Content -->
+
+            <div class="tab-pane fade" id="menu-beambracket">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Beam Bracket (Cup Lock)</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/beam-bracket-1.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/beam-bracket-1.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Beam Bracket (Cup Lock)
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/beam-bracket-3.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/beam-bracket-3.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Beam Bracket (Cup Lock)
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/beam-bracket-2.jpg" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/beam-bracket-2.jpg" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Beam Bracket (Cup Lock)
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Lunch Menu Content -->
+
+            <div class="tab-pane fade" id="menu-cantilever">
+
+              <div class="tab-header text-center">
+                <p>Materials</p>
+                <h3>Cantilever Frame</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cantilever-1.webp" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cantilever-1.webp" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cantilever Frame
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cantilever-2.webp" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cantilever-2.webp" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cantilever Frame
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cantilever-3.webp" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cantilever-3.webp" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cantilever Frame
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cantilever-4.webp" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cantilever-4.webp" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cantilever Frame
+                  </p>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/Scaffolding/Accessories Images/cantilever-5.webp" class="glightbox"><img
+                      src="assets/img/Scaffolding/Accessories Images/cantilever-5.webp" class="menu-img img-fluid"
+                      alt=""></a>
+                  <p class="ingredients">
+                    Cantilever Frame
+                  </p>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Lunch Menu Content -->
+
+          </div>
+
+        </div>
+      </section><!-- End Menu Section -->
+
+
+      <!-- ======= Our Projects Section ======= -->
+
+      <section id="#" class="projects">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <h2>Explore more about our Scaffold Inventory</h2>
+            <p> Browse through some other types of products or accessories from the scaffolding section.</p>
+          </div>
+
+          <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+            data-portfolio-sort="original-order">
+
+            <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-remodeling">Scaffold Fittings</li>
+              <li data-filter=".filter-construction">Scaffold Aluminium Products</li>
+              <li data-filter=".filter-repairs">System Scaffolding</li>
+              <li data-filter=".filter-ladder">Scaffold Ladders</li>
+              <li data-filter=".filter-design">Scaffolding Platform</li>
+            </ul><!-- End Projects Filters -->
+
+            <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/Double-Coupler.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Fittings</h4>
+                    <p>Double Coupler D/F EN74 Class B</p>
+                    <a href="assets/img/Scaffolding/other images/Double-Coupler.jpg"
+                      title="Double Coupler D/F EN74 Class B" data-gallery="portfolio-gallery-remodeling"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/aluminium-mobile-tower.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Aluminium Products</h4>
+                    <p>Aluminum Mobile Tower Scaffolding</p>
+                    <a href="assets/img/Scaffolding/other images/aluminium-mobile-tower.jpg"
+                      title="Aluminum Mobile Tower Scaffolding" data-gallery="portfolio-gallery-construction"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-ladder">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/single-straight-ladder.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Ladders</h4>
+                    <p>Single Straight Aluminium Ladder</p>
+                    <a href="assets/img/Scaffolding/other images/single-straight-ladder.jpg"
+                      title="Single Straight Aluminium Ladder" data-gallery="portfolio-gallery-ladder"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/cuplock.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>System Scaffolding</h4>
+                    <p>Cup Lock System</p>
+                    <a href="assets/img/Scaffolding/other images/cuplock.jpg"
+                      title="Cup Lock System" data-gallery="portfolio-gallery-repairs"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                   
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/osha.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffolding Platform</h4>
+                    <p>Scaffold Board Osha LVL PROOF TESTED SCAFFOLD PLANK</p>
+                    <a href="assets/img/Scaffolding/other images/osha.jpg"
+                      title="Scaffold Board Osha LVL PROOF TESTED SCAFFOLD PLANK" data-gallery="portfolio-gallery-book"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                   
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/Swivel-Coupler.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Fittings</h4>
+                    <p>Swivel Coupler D/F EN74 Class B</p>
+                    <a href="assets/img/Scaffolding/other images/Swivel-Coupler.jpg"
+                      title="Swivel Coupler D/F EN74 Class B" data-gallery="portfolio-gallery-remodeling"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-ladder">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/extension-ladder.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Ladders</h4>
+                    <p>Extension Ladders</p>
+                    <a href="assets/img/Scaffolding/other images/extension-ladder.jpg"
+                      title="Extension Ladders" data-gallery="portfolio-gallery-ladder"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/single-width-mobile-tower.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Aluminium Products</h4>
+                    <p>Single Width Mobile Tower Scaffolding</p>
+                    <a href="assets/img/Scaffolding/other images/single-width-mobile-tower.jpg"
+                      title="Single Width Mobile Tower Scaffolding" data-gallery="portfolio-gallery-construction"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                   
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/steel-planks.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffolding Platform</h4>
+                    <p>Steel Planks EN 1211-1</p>
+                    <a href="assets/img/Scaffolding/other images/steel-planks.jpg"
+                      title="Steel Planks EN 1211-1" data-gallery="portfolio-gallery-book"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                   
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-ladder">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/Multi-Purpose-typeA-ladder.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Ladders</h4>
+                    <p>A Type Ladder (Multi-Purpose Ladder)</p>
+                    <a href="assets/img/Scaffolding/other images/Multi-Purpose-typeA-ladder.jpg"
+                      title="A Type Ladder (Multi-Purpose Ladder)" data-gallery="portfolio-gallery-ladder"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-ladder">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/steel-ladder.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Ladders</h4>
+                    <p>Steel Ladders</p>
+                    <a href="assets/img/Scaffolding/other images/steel-ladder.jpg"
+                      title="Steel Ladders" data-gallery="portfolio-gallery-ladder"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item filter-ladder">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/ladder-beams.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Ladders</h4>
+                    <p>Steel Ladder Beams</p>
+                    <a href="assets/img/Scaffolding/other images/ladder-beams.jpg"
+                      title="Steel Ladder Beams" data-gallery="portfolio-gallery-ladder"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/grind-coupler.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Fittings</h4>
+                    <p>Girder Coupler/Beam Clamp D/F EN 74</p>
+                    <a href="assets/img/Scaffolding/other images/grind-coupler.jpg"
+                      title="irder Coupler/Beam Clamp D/F EN 74" data-gallery="portfolio-gallery-remodeling"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/double-width-mobile-tower.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Aluminium Products</h4>
+                    <p>Double Width Mobile Tower Scaffolding</p>
+                    <a href="assets/img/Scaffolding/other images/double-width-mobile-tower.jpg"
+                      title="Double Width Mobile Tower Scaffolding" data-gallery="portfolio-gallery-construction"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                   
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/steel-board-without-hooks.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffolding Platform</h4>
+                    <p>Steel Board without Hook (Block End)</p>
+                    <a href="assets/img/Scaffolding/other images/steel-board-without-hooks.jpg" title="Steel Board without Hook (Block End)"
+                      data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-ladder">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/fiber-glass-tower-ladder.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Ladders</h4>
+                    <p>Fiber Glass Mobile Tower Scaffolding</p>
+                    <a href="assets/img/Scaffolding/other images/fiber-glass-tower-ladder.jpg"
+                      title="Fiber Glass Mobile Tower Scaffolding" data-gallery="portfolio-gallery-ladder"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/ladder-clamp.webp"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Fittings</h4>
+                    <p>Ladder Clamp Pressed EN74</p>
+                    <a href="assets/img/Scaffolding/other images/ladder-clamp.webp"
+                      title="Ladder Clamp Pressed EN74" data-gallery="portfolio-gallery-remodeling"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/steel-board-with-hooks.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffolding Platform</h4>
+                    <p>Steel Board with Hook</p>
+                    <a href="assets/img/Scaffolding/other images/steel-board-with-hooks.jpg"
+                      title="Steel Board with Hook" data-gallery="portfolio-gallery-book"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                 
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-ladder">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/FIBER-SINGLE-SIDE.webp"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Ladders</h4>
+                    <p>Single Straight Fiber Glass Ladder</p>
+                    <a href="assets/img/Scaffolding/other images/FIBER-SINGLE-SIDE.webp"
+                      title="Single Straight Fiber Glass Ladder" data-gallery="portfolio-gallery-ladder"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/toe-board-clamp.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Fittings</h4>
+                    <p>Toe Board Clamp EN 74</p>
+                    <a href="assets/img/Scaffolding/other images/toe-board-clamp.jpg"
+                      title="Toe Board Clamp EN 74" data-gallery="portfolio-gallery-remodeling"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/foldable-scaffold-product.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Aluminium Products</h4>
+                    <p>Folding Type Aluminum Mobile Tower</p>
+                    <a href="assets/img/Scaffolding/other images/foldable-scaffold-product.jpg"
+                      title="Folding Type Aluminum Mobile Tower" data-gallery="portfolio-gallery-construction"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                   
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-ladder">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/FIBER-DOUBLE-SIDE.webp"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Ladders</h4>
+                    <p>Fiber Glass (FGL) Double Section Straight Ladder</p>
+                    <a href="assets/img/Scaffolding/other images/FIBER-DOUBLE-SIDE.webp"
+                      title="Fiber Glass (FGL) Double Section Straight Ladder" data-gallery="portfolio-gallery-ladder"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/pressed-sleeve-coupler.webp"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Fittings</h4>
+                    <p>Pressed Sleeve Coupler EN74 Class B
+                      (In accordance with BS1139 Part 2
+                       Sec 2.1 1991/EN74 1988)
+                      </p>
+                    <a href="assets/img/Scaffolding/other images/pressed-sleeve-coupler.webp"
+                      title="Pressed Sleeve Coupler EN74 Class B
+                      (In accordance with BS1139 Part 2
+                       Sec 2.1 1991/EN74 1988)" data-gallery="portfolio-gallery-remodeling"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-ladder">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/fiberglass-typeA-ladders.jpg"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Ladders</h4>
+                    <p>A Type Ladder (Fiber Glass Ladder)</p>
+                    <a href="assets/img/Scaffolding/other images/fiberglass-typeA-ladders.jpg"
+                      title="A Type Ladder (Fiber Glass Ladder)" data-gallery="portfolio-gallery-ladder"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/joint-pin.webp"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Fittings</h4>
+                    <p>Joint Pin (Pressed) EN74</p>
+                    <a href="assets/img/Scaffolding/other images/joint-pin.webp"
+                      title="Joint Pin (Pressed) EN74" data-gallery="portfolio-gallery-remodeling"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/board-retaining-pin.avif"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Fittings</h4>
+                    <p>Board Retaining Clamp EN74</p>
+                    <a href="assets/img/Scaffolding/other images/board-retaining-pin.avif"
+                      title="Board Retaining Clamp EN74" data-gallery="portfolio-gallery-remodeling"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/Scaffolding/other images/staircase-coupler.webp"
+                    class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Scaffold Fittings</h4>
+                    <p>Staircase Coupler Pressed</p>
+                    <a href="assets/img/Scaffolding/other images/staircase-coupler.webp"
+                      title="Staircase Coupler Pressed" data-gallery="portfolio-gallery-remodeling"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+
+            </div><!-- End Projects Container -->
+
+          </div>
+
+        </div>
+      </section><!-- End Our Projects Section -->
+
+      <!-- ======= Footer ======= -->
+      <footer id="footer" class="footer">
+
+        <div class="footer-content position-relative">
+
+          <div class="container">
+            <div class="row">
+
+              <div class="col-lg-4 col-md-6">
+                <img src="./assets/img/Logo/EDEN logo no bgr.png" class="footer-img">
+                <div class="footer-info">
+                  <p>
+                    Office 21,
+                    Level 2,
+                    Building 6
+                    <br>
+                    Block 326, Road 355
+                    Adliya,<br>
+                    Kingdom of Bahrain<br><br>
+                    <strong>Phone:</strong> +973 35574657<br>
+                    <strong>Email:</strong> <a href="mailto:sales@edenbh.com">sales@edenbh.com</a><br>
+                  </p>
+                  <div class="social-links d-flex mt-3">
+                    <a href="https://www.facebook.com/share/GNVNeK3Gmx63yKCD/?mibextid=qi2Omg"
+                      class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/edeninternational.bh?igsh=MTI3b3c5OW10MW05OA=="
+                      class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/eden-international-by-eden-group/"
+                      class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div><!-- End footer info column-->
+
+              <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html#get-started">About us</a></li>
+                  <li><a href="index.html#services">Services</a></li>
+                  <li><a href="index.html#projects">Our Projects</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="index.html#get-started">Get a Quote</a></li>
+                </ul>
+              </div><!-- End footer links column-->
+
+              <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><a href="services.html#alt-services-6">Industrial Support Services</a></li>
+                  <li><a href="services.html#alt-services-4">Space Frame Structures</a></li>
+                  <li><a href="Scaffold.html">Scaffolding</a></li>
+                  <li><a href="services.html#alt-services-2">General Trading</a></li>
+                  <li><a href="services.html#alt-services-3">Steel Fabrication</a></li>
+                  <li><a href="services.html#alt-services-5">Louvers Design Technology</a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </div><!-- End footer links column-->
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-legal text-center position-relative">
+          <div class="container">
+            <div class="copyright">
+              &copy; Copyright <strong><span>EDEN GROUP/EDEN International</span></strong>. All Rights Reserved
+            </div>
+          </div>
+        </div>
+
+      </footer>
+      <!-- End Footer -->
+
+      <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+          class="bi bi-arrow-up-short"></i></a>
+
+      <div id="preloader"></div>
+
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+
+    </body>
+
+</html>
